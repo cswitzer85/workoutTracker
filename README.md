@@ -17,7 +17,7 @@ An application in which the user can input various intended or completed exercis
   - [Cody Switzer](https://cswitzer85.github.io/Basic-Portfolio/ "cswitzer85's GitHub")
 - [License(s)](<#License(s)>)
 - [Acknowledgements](#Acknowledgements)
-
+ 
 ## About the Project
 
 This is what my project is about...
