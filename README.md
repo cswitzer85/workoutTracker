@@ -17,20 +17,23 @@ An application in which the user can input various intended or completed exercis
 
 ## About the Project
 
-This is what my project is about...
+The workout tracker allows the user to input resistance or cardio activities, then view their past exercises on a fitness tracker dashboard.
 
 ## Getting Started
 
-This is how you get started...,
+Upon site render, the fitness tracker will allow for the user to create a new workout, view the dashboard or even pick up where they might have left off with a previous workout.  
+  
+![alt text](https://github.com/cswitzer85/workoutTracker/blob/master/assets/fitnessTrackerScreenShot.png?raw=true)
+  
+When the user inputs a new workout, they will be given the option of cardio or resistance in a drop down box. Once a selection is made the appropriate inputs will render below and allow the user to give quantitative data that will be saved in a database and used to give visual aids in the fitness tracker dashboard.
 
 ## Usage
 
-Upon arriving on the ladning application...
-Page Description ![alt text](https://github.com/cswitzer85/workoutTracker/blob/master/assets/     FiLeNaMeHeRe     .png?raw=true)
+Open the app to record exercises and view past exercises in the fitness tracker dashboard.
 
 ## Contributing
 
-This project was completed as an assignment for SMU Coding Boot Camp, and as such is not subject to any regular update or maintenance. However, if you would like to extend advise, inquire about the project or otherwise communicate about this project, please use any of the means in the contact section below.
+This project is as an assignment for SMU Coding Boot Camp, and as such is not subject to any regular update or maintenance. However, if you would like to extend advise, inquire about the project or otherwise communicate about this project, please use any of the means in the contact section below.
 
 ## Contact
 
