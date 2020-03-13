@@ -1,19 +1,20 @@
 const router = require("express").Router();
-const Transaction = require("../models/workoutModel");
+const Workout = require("../models/workoutModel");
 
 // New Workout
-router.post("/api/exercise", ({ body }, res) => {
+router.post("/api/workout", ({ body }, res) => {
   Workout.create(body)
     .then(dbWorkout => {
       res.json(dbWorkout);
     })
     .catch(err => {
       res.json(err);
+      // res.status(400).json(err);
     });
 });
 
 // Continue Workout
-// router.post("/api/exercise?", ({ body }, res) => {
+// router.post("/api/workout", ({ body }, res) => {
 //     Workout.create(body)
 //     .then(dbWorkout => {
 //         res.json(dbWorkout);
@@ -24,13 +25,14 @@ router.post("/api/exercise", ({ body }, res) => {
 // });
 
 // Fitness Tracker Dashboard
-router.get("/api/stats", (req, res) => {
-  Transaction.find({})
+router.get("/api/workout", (req, res) => {
+  Workout.find({})
     .sort({ date: -1 })
-    .then(dbTransaction => {
-      res.json(dbTransaction);
+    .then(dbWorkout => {
+      res.json(dbWorkout);
     })
     .catch(err => {
+      // res.json(err);
       res.status(400).json(err);
     });
 });
