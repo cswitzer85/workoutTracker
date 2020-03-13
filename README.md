@@ -1,9 +1,6 @@
 # workoutTracker
-An application in which the user can input various intended or completed exercises. Intended exercises can later be changed to completed and progress can be displayed with visual aids.
-<!-- Shields -->
 
-[![Build Status](https://travis-ci.com/github/cswitzer85/workoutTracker.svg?branch=master)](https://travis-ci.com/github/cswitzer85/workoutTracker)
-![GitHub closed issues](https://img.shields.io/github/issues-closed/cswitzer85/workoutTracker)
+An application in which the user can input various intended or completed exercises. Intended exercises can later be changed to completed and progress can be displayed with visual aids.
 
 <!-- TABLE OF CONTENTS -->
 
@@ -17,7 +14,7 @@ An application in which the user can input various intended or completed exercis
   - [Cody Switzer](https://cswitzer85.github.io/Basic-Portfolio/ "cswitzer85's GitHub")
 - [License(s)](<#License(s)>)
 - [Acknowledgements](#Acknowledgements)
- 
+
 ## About the Project
 
 This is what my project is about...
@@ -43,10 +40,4 @@ This project was completed as an assignment for SMU Coding Boot Camp, and as suc
   - Cody Switzer on: [Linked In](https://www.linkedin.com/in/cody-switzer-1429593a/ "cody-switzer-1429593a Linked In")
   - Cody's e-mail: cswitzer85@gmail.com
 
-## Acknowledgements
-
-- [Img Shields](https://shields.io)
-
-- [Travis](https://travis-ci.org/)
-
-- [ESLint](https://eslint.org/)
+<!-- ## Acknowledgements -->
