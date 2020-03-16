@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
-
+// Keys named based on public workout js file
 const workoutSchema = new Schema({
   type: {
     type: String,
