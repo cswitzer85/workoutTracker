@@ -10,7 +10,7 @@ const router = require("express").Router();
 
   // New workout page
   router.get("/workout", function(req, res) {
-    console.log("workout __dirname:",  __dirname)
+    console.log("workout __dirname: ",  __dirname)
     res.sendFile(path.join(__dirname + "/workout.html"));
     // res.sendFile(path.join(__dirname, "../public/workout.html"));
   });
