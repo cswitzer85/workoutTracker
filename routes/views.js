@@ -9,11 +9,11 @@ const router = require("express").Router();
   });
 
   // New workout page
-  router.get("/workout", function(req, res) {
-    console.log("workout __dirname: ",  __dirname)
-    res.sendFile(path.join(__dirname + "/workout.html"));
+  // router.get("/workout", function(req, res) {
+  //   console.log("workout __dirname: ",  __dirname)
+  //   res.sendFile(path.join(__dirname + "/workout.html"));
     // res.sendFile(path.join(__dirname, "../public/workout.html"));
-  });
+  // });
 
   // Continue workout page
   // router.get("/workout?id=:id", function(req, res) {
