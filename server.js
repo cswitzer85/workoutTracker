@@ -1,6 +1,7 @@
 const express = require("express");
 const logger = require("morgan");
 const mongoose = require("mongoose");
+const path = require("path");
 
 const PORT = process.envPORT || 8000;
 
@@ -15,8 +16,21 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/workout", {
   useNewUrlParser: true
 });
 
-app.use(require("./routes/views"));
-app.use(require("./routes/expressApiRoutes"));
+// app.use(require("./routes/views"));
+require("./routes/expressApiRoutes")(app);
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/index.html"));
+});
+
+app.get("/exercise", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/exercise.html"));
+});
+
+// Stats page
+app.get("/stats", function(req, res) {
+  res.sendFile(path.join(__dirname + "/public/stats.html"));
+});
 
 // app.LISTEN
 app.listen(PORT, () => {

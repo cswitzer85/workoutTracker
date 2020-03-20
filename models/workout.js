@@ -1,45 +1,40 @@
 const mongoose = require("mongoose");
+
 const Schema = mongoose.Schema;
-// Keys named based on public workout js file
-const workoutSchema = new Schema({
+
+const WorkoutSchema = new Schema({
+ 
   exercises: [
     {
       type: {
         type: String,
-        required: "Please make a selection"
+        trim: true,
       },
-
       name: {
         type: String,
-        trim: true
+        trim: true,
       },
-
-      duration: {
-        type: Number,
-        trim: true
-      },
-
+      duration: Number,
       weight: {
         type: Number,
-        trim: true
+        default: 0
       },
-
       reps: {
         type: Number,
-        trim: true
+        default: 0
       },
       sets: {
         type: Number,
-        trim: true
+        default: 0
       },
       distance: {
         type: Number,
-        trim: true
+        default: 0
       }
     }
-  ]
+  ],
 });
 
-const Workout = mongoose.model("Workout", workoutSchema);
+const Workout = mongoose.model("Workout", WorkoutSchema);
 
 module.exports = Workout;
